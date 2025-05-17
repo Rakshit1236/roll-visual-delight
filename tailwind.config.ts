@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				dice: {
+					red: '#e63946',
+					background: '#f1faee',
+					table: '#1d3a34'
 				}
 			},
 			borderRadius: {
@@ -84,11 +90,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'roll-dice': {
+					'0%': { transform: 'rotateX(0) rotateY(0) rotateZ(0)' },
+					'20%': { transform: 'rotateX(180deg) rotateY(90deg) rotateZ(45deg)' },
+					'40%': { transform: 'rotateX(360deg) rotateY(180deg) rotateZ(90deg)' },
+					'60%': { transform: 'rotateX(180deg) rotateY(270deg) rotateZ(135deg)' },
+					'80%': { transform: 'rotateX(0) rotateY(360deg) rotateZ(180deg)' },
+					'100%': { transform: 'rotateX(0) rotateY(0) rotateZ(0)' }
+				},
+				'bounce-in': {
+					'0%': { transform: 'scale(0.8)', opacity: '0' },
+					'60%': { transform: 'scale(1.1)', opacity: '1' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'roll-dice': 'roll-dice 0.8s ease-out forwards',
+				'bounce-in': 'bounce-in 0.5s ease-out'
 			}
 		}
 	},

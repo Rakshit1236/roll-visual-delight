@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,23 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* 3D effect utilities */
+.perspective-500 {
+  perspective: 500px;
+}
+
+.transform-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Dice table background */
+.bg-dice-table {
+  background-color: theme('colors.dice.table');
+  background-image: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
 }
