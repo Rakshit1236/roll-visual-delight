@@ -43,7 +43,7 @@ const Die: React.FC<DieProps> = ({ value, isRolling }) => {
       <div 
         className={`
           w-20 h-20 bg-dice-red rounded-lg shadow-lg relative
-          transform-preserve-3d
+          transform-preserve-3d transition-transform
           flex items-center justify-center
           ${isRolling ? 'animate-roll-dice' : 'animate-bounce-in'}
         `}

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -76,27 +75,21 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
 				},
 				'roll-dice': {
 					'0%': { transform: 'rotateX(0) rotateY(0) rotateZ(0)' },
-					'20%': { transform: 'rotateX(180deg) rotateY(90deg) rotateZ(45deg)' },
-					'40%': { transform: 'rotateX(360deg) rotateY(180deg) rotateZ(90deg)' },
-					'60%': { transform: 'rotateX(180deg) rotateY(270deg) rotateZ(135deg)' },
-					'80%': { transform: 'rotateX(0) rotateY(360deg) rotateZ(180deg)' },
+					'15%': { transform: 'rotateX(120deg) rotateY(60deg) rotateZ(30deg)' },
+					'30%': { transform: 'rotateX(240deg) rotateY(120deg) rotateZ(60deg)' },
+					'45%': { transform: 'rotateX(360deg) rotateY(180deg) rotateZ(90deg)' },
+					'60%': { transform: 'rotateX(240deg) rotateY(240deg) rotateZ(120deg)' },
+					'75%': { transform: 'rotateX(120deg) rotateY(300deg) rotateZ(150deg)' },
+					'90%': { transform: 'rotateX(0) rotateY(360deg) rotateZ(180deg)' },
 					'100%': { transform: 'rotateX(0) rotateY(0) rotateZ(0)' }
 				},
 				'bounce-in': {
@@ -108,7 +101,7 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'roll-dice': 'roll-dice 0.8s ease-out forwards',
+				'roll-dice': 'roll-dice 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
 				'bounce-in': 'bounce-in 0.5s ease-out'
 			}
 		}
